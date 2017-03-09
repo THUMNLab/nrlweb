@@ -1,0 +1,60 @@
+{% extends 'main.html' %}
+{% block primary %}
+<div class="primary col-md-8 col-sm-12 col-xs-12">
+	<section class="title section">
+		<div class="section-inner">
+			<h2 class="paper-title">Community Preserving Network Embedding</h2>
+			<div class="content">
+				<h4 class="authors">Xiao Wang, Peng Cui, Jing Wang, Jian Pei, Wenwu Zhu, Shiqiang Yang. AAAI 2017</h3>
+				<p>M-NMF learns the representations of nodes in a network which can preserve the microscopic structure (first- and second-order proximities of nodes) and mesoscopic community structure.</p>
+			 
+			</div><!--//content-->
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+   <section class="motivation section">
+		<div class="section-inner">
+			<h2 class="heading">Motivation</h2>
+			<div class="content">    
+				<p>Previous work focuses on preserving the microscopic structure when they learn the representations of nodes, while the community structure, which is one of the most prominent feature of network, is largely ignored. M-NMF is network embedding method based on the framework of nonnegative matrix factorization (NMF). Specifically, it discovers the community structure by maximizing the modularity, and learns the representations of nodes by NMF. Meanwhile, M-NMF builds their consensus relationships, so that the community structure can guide the representations of nodes. Also, we derive the updating rules of M-NMF with correctness and convergence guarantees.</p>
+				<p> <img class="pic" src="static/assets/images/community-preserving-network-embedding/pic.png" alt="pic" width="100%"/> </p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+	
+	<section class="code section">
+		<div class="section-inner">
+			<h2 class="heading">Code</h2>
+			<div class="content">
+				<p>Git repository: <a href="http://git.thumedia.org/embedding/M-NMF">git.thumedia.org/embedding/M-NMF</a><p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+	<section class="Datasets section">
+		<div class="section-inner">
+			<h2 class="heading">Datasets</h2>
+			<div class="content">    
+				<p>Links to datasets used in the paper: 
+					<ul>
+						<li><a href="http://linqs.cs.umd.edu/projects/projects/lbc/">WebKB</a> </li>
+						<li><a href="http://www-personal.umich.edu/~mejn/netdata/">Polblogs</a> </li>
+						<li><a href="static/assets/images/community-preserving-network-embedding/Facebook.zip">Facebook network</a> </li>
+					</ul>
+				</p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+	<section class="References section">
+		<div class="section-inner">
+			<h2 class="heading">References</h2>
+			<div class="content">    
+				<p>Community Preserving Network Embedding. Xiao Wang, Peng Cui, Jing Wang, Jian Pei, Wenwu Zhu, Shiqiang Yang. Proceedings of the 31st AAAI Conference on Artificial Intelligence (AAAI). 2017.
+				</p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+	
+</div><!--//primary-->
+{% endblock %}

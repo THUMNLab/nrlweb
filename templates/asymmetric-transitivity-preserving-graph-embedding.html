@@ -1,0 +1,55 @@
+{% extends 'main.html' %}
+{% block primary %}
+<div class="primary col-md-8 col-sm-12 col-xs-12">
+	<section class="title section">
+		<div class="section-inner">
+			<h2 class="paper-title">Asymmetric Transitivity Preserving Graph Embedding</h2>
+			<div class="content">
+				<h4 class="authors">Mingdong Ou, Peng Cui, Ziwei Zhang, Jian Pei, Wenwu Zhu. SIGKDD 2016</h3>
+				<p>In this paper, we aim to preserve asymmetric transitivity in directed graphs by approximating high-order proximities. We propose a scalable approximation algorithm, called High Order Proximity preserved Embedding (HOPE). In this algorithm, we first derive a general formulation of a class of high-order proximity measurements, then apply generalized SVD to the general formulation, whose time complexity is linear with the size of graph. The empirical study demonstrates the superiority of asymmetric transitivity and our proposed algorithm.</p>
+			 	<p> <img class="pic" src="static/assets/images/asymmetric-transitivity-preserving-graph-embedding/pic.jpg" alt="pic" width="100%"/> </p>
+			 	<p>We provide the <a href="static/assets/images/asymmetric-transitivity-preserving-graph-embedding/Poster.jpg">poster</a>,
+				<a href="static/assets/images/asymmetric-transitivity-preserving-graph-embedding/2016_KDD_Asymmetric Transitivity Preserving Graph Embedding.pdf">pdf</a> and 
+				<a href="static/assets/images/asymmetric-transitivity-preserving-graph-embedding/Asymmetric Transitivity Preserving Graph Embedding.pptx">ppt</a> of this paper.
+				<p>
+			</div><!--//content-->
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+	<section class="code section">
+		<div class="section-inner">
+			<h2 class="heading">Code</h2>
+			<div class="content">
+				<p>Git repository: <a href="http://git.thumedia.org/embedding/HOPE">git.thumedia.org/embedding/HOPE</a><p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+	<section class="Datasets section">
+		<div class="section-inner">
+			<h2 class="heading">Datasets</h2>
+			<div class="content">    
+				<p>Links to datasets used in the paper: 
+					<ul>
+						<li><a href="http://konect.uni-koblenz.de/networks/subelj_cora">Cora</a> </li>
+						<li><a href="http://konect.uni-koblenz.de/networks/munmun_twitter_social">Twitter Social Network</a> </li>
+						<li><a href="http://www.kddcup2012.org/c/kddcup2012-track1/data">Tencent Weibo Social Network</a> </li>
+					</ul>
+				</p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+	<section class="References section">
+		<div class="section-inner">
+			<h2 class="heading">References</h2>
+			<div class="content">    
+				<p>Ou M, Cui P, Pei J, et al. Asymmetric transitivity preserving graph embedding[C]//Proc. of ACM SIGKDD. 2016: 1105-1114.
+				</p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+	
+</div><!--//primary-->
+{% endblock %}
