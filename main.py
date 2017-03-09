@@ -35,7 +35,7 @@ def index():
 	
 @app.route('/<name>')
 def show_page(name):
-	return render_template('%s.html' % name)
+	return render_template('%s.html' % name, cnt = add_th(session['count']))
 
 if __name__ == '__main__':
 	app.run(host = '0.0.0.0')
