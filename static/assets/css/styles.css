@@ -430,6 +430,8 @@ iframe {
 .papers .item .title {
   font-size: 16px;
   margin-top: 0;
+  padding-left: 20px;
+  text-indent: -10px;
 }
 .papers .item .authors {
   font-family: "Lato", arial, sans-serif;
