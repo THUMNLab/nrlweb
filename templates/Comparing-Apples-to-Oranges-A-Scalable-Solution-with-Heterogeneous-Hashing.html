@@ -1,0 +1,66 @@
+{% extends 'main.html' %}
+{% block primary %}
+<div class="primary col-md-8 col-sm-12 col-xs-12">
+	<section class="title section">
+		<div class="section-inner">
+			<h2 class="paper-title">Comparing Apples to Oranges: A Scalable Solution with Heterogeneous Hashing</h2>
+			<div class="content">
+				<h4 class="authors">Mingdong Ou, Peng Cui, Fei Wang, Jun Wang, Wenwu Zhu, Shiqiang Yang. SIGKDD 2013</h3>
+			 
+			</div><!--//content-->
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+   <section class="motivation section">
+		<div class="section-inner">
+			<h2 class="heading">Motivation</h2>
+			<div class="content">    
+				<p>
+				   Although hashing techniques have been popular for the large scale similarity search problem, most of the existing methods for designing optimal hash functions focus on homogeneous similarity assessment. Realizing that heterogeneous entities and relationships are also ubiquitous in the real world applications, there is an emerging need to retrieve and search similar or relevant data entities from multiple heterogeneous domains.
+				  </p>
+				  <p>
+				   <img alt="" src="static/assets/images/Comparing-Apples-to-Oranges-A-Scalable-Solution-with-Heterogeneous-Hashing.png" width="60%"/>
+				  </p>
+				  <p>
+				   <em>
+					Relation-aware Heterogeneous Hashing
+				   </em>
+				   (RaHH) provides a general framework for generating hash codes of data entities sitting in multiple heterogeneous domains. Unlike some existing hashing methods that map heterogeneous data in a common Hamming space, the RaHH approach constructs a Hamming space for each type of data entities, and learns optimal mappings between them simultaneously. Moreover, the RaHH framework encodes both homogeneous and heterogeneous relationships between the data entities to design hash functions with im- proved accuracy.
+				</p>
+				
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+	<section class="dataset section">
+		<div class="section-inner">
+			<h2 class="heading">Dataset</h2>
+			<div class="content">
+				</ul>
+				<li>
+				   Tencent Weibo Dataset
+				</li>
+				<li>
+				   <a href="http://lms.comp.nus.edu.sg/research/NUS-WIDE.htm">
+     				NUS-WIDE
+    				</a>
+				</li>
+				</ul>
+				
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+	
+	<section class="reference section">
+		<div class="section-inner">
+			<h2 class="heading">References</h2>
+			<div class="content">
+				<p>
+				   Ou M, Cui P, Wang F, et al.<a href="http://dl.acm.org/citation.cfm?id=2487668">Comparing apples to oranges: a scalable solution with heterogeneous hashing</a>[C]//Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2013: 230-238.
+				  </p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+	
+</div><!--//primary-->
+{% endblock %}
