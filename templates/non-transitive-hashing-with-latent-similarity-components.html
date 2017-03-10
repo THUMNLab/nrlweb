@@ -1,0 +1,81 @@
+{% extends 'main.html' %}
+{% block primary %}
+<div class="primary col-md-8 col-sm-12 col-xs-12">
+  <section class="title section">
+    <div class="section-inner">
+      <h2 class="paper-title">Non-transitive Hashing with Latent Similarity Components</h2>
+      <div class="content">
+        <h4 class="authors">Mingdong Ou, Peng Cui, Fei Wang, Jun Wang, Wenwu Zhu. SIGKDD 2015</h3>
+      </div>
+    </div>
+  </section>
+  <section class="motivation section">
+    <div class="section-inner">
+      <h2 class="heading">Motivation</h2>
+      <div class="content">
+        <p>
+          This work embedds entities to a Hamming space based on their semantic similarity.
+        </p>
+        <p>
+          The semantic similarities between entities
+          are often non-transitive since they could share different latent
+          similarity components.
+          For example, in social networks,
+          we connect with people for various reasons, such as sharing
+          common interests, working in the same company, being
+          alumni and so on. These social connections are
+          non-transitive if people are connected due to different reasons.
+        </p>
+        <p>
+          The figure below is another example.
+          <img alt="" src="static/assets/images/non-transitive-hashing-with-latent-similarity-components.png" width="90%"/>
+        </p>
+        <p>
+          We propose a non-transitive hashing method, namely
+          <em>Multi-Component Hashing (MuCH)</em>, to identify the latent
+          similarity components to cope with the non-transitive similarity
+          relationships.
+          MuCH generates multiple hash tables
+          with each hash table corresponding to a similarity component,
+          and preserves the non-transitive similarities in different
+          hash table respectively.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dataset section">
+    <div class="section-inner">
+      <h2 class="heading">Dataset</h2>
+      <div class="content">
+        </ul>
+        <li>
+          <a href="http://lms.comp.nus.edu.sg/research/NUS-WIDE.htm">
+            NUS-WIDE
+           </a>
+        </li>
+        <li>
+          <a href="http://www.informatik.uni-trier.de/~ley/db/">
+	    DBLP
+           </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="reference section">
+    <div class="section-inner">
+      <h2 class="heading">References</h2>
+      <div class="content">
+        <p>
+	  Ou, Mingdong and Cui, Peng and Wang, Fei and Wang, Jun and Zhu, Wenwu.
+          <a href="http://dl.acm.org/citation.cfm?id=2783283">Non-transitive Hashing with Latent Similarity Components.</a>
+	  Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '15).
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}

@@ -18,6 +18,12 @@
 		"url" : "asymmetric-transitivity-preserving-graph-embedding"
 	},
 	{
+		"title" : "Non-transitive Hashing with Latent Similarity Components",
+		"authors" : "M Ou, P Cui, F Wang, J Wang, W Zhu.",
+		"year" : "SIGKDD 2015",
+		"url" : "non-transitive-hashing-with-latent-similarity-components"
+	},
+	{
 		"title" : "Comparing Apples to Oranges: A Scalable Solution with Heterogeneous Hashing",
 		"authors" : "M Ou, P Cui, F Wang, J Wang, W Zhu, S Yang.",
 		"year" : "SIGKDD 2013",
