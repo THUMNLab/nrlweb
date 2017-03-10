@@ -1,8 +1,22 @@
 {% extends 'main.html' %}
 {% block primary %}
 <div class="primary col-md-8 col-sm-12 col-xs-12">
+	<section class="papers section">
+		<div class="section-inner" id="papers">
+			<h2 class="heading">Conference Papers</h2>
+			<div class="content">
+				{% for paper in papers %}
+				<a class="item" href="/{{ paper.url }}">
+					<h3 class="title"><i class="fa fa-pencil"></i> {{ paper.title }}</h3>
+					<h4 class="authors">{{ paper.authors }} <span class="year">({{ paper.year }})</span></h4>
+				</a>
+				{% endfor %}
+			</div><!--//content-->
+		</div><!--//section-inner-->
+	</section>
+
 	<section class="about section">
-		<div class="section-inner">
+		<div class="section-inner" id="about">
 			<h2 class="heading">About Us</h2>
 			<div class="content">
 				<p>Write a brief intro about yourself. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>    
@@ -11,6 +25,44 @@
 			 
 			</div><!--//content-->
 		</div><!--//section-inner-->                 
+	</section><!--//section-->
+	
+	<section class="members section">
+		<div class="section-inner" id="members">
+			<h2 class="heading">Group Members</h2>
+			<div class="content">
+				<a class="item" href="http://media.cs.tsinghua.edu.cn/cn/zww">
+					<h3 class="name"><i class="fa fa-user"></i> Wenwu Zhu <span class="title"> Professor</span></h3>
+				</a><!--//item-->
+				<a class="item" href="http://media.cs.tsinghua.edu.cn/~multimedia/cuipeng/">
+					<h3 class="name"><i class="fa fa-user"></i> Peng Cui <span class="title"> Associate Professor</span></h3>
+				</a><!--//item-->
+				<a class="item">
+					<h3 class="name"><i class="fa fa-user"></i> Xiao Wang <span class="title"> Post-doctoral</span></h3>
+				</a><!--//item-->
+				<a class="item">
+					<h3 class="name"><i class="fa fa-user"></i> Mingdong Ou <span class="title"> Ph.D</span></h3>
+				</a><!--//item-->
+				<a class="item">
+					<h3 class="name"><i class="fa fa-user"></i> Ke Tu <span class="title"> Ph.D Candidate</span></h3>
+				</a><!--//item-->
+				<a class="item">
+					<h3 class="name"><i class="fa fa-user"></i> Dingyuan Zhu <span class="title"> Ph.D Candidate</span></h3>
+				</a><!--//item-->
+				<a class="item" href="mailto:chen.xm.mu@gmail.com">
+					<h3 class="name"><i class="fa fa-user"></i> Xumin Chen <span class="title"> Ph.D Candidate</span></h3>
+				</a><!--//item-->
+				<a class="item">
+					<h3 class="name"><i class="fa fa-user"></i> Ziwei Zhang <span class="title"> Ph.D Candidate</span></h3>
+				</a><!--//item-->
+				<a class="item">
+					<h3 class="name"><i class="fa fa-user"></i> Jianxin Ma <span class="title"> Undergraduate</span></h3>
+				</a><!--//item-->
+				<a class="item">
+					<h3 class="name"><i class="fa fa-user"></i> Xuanrong Yao <span class="title"> Undergraduate</span></h3>
+				</a><!--//item-->
+			</div><!--//content-->
+		</div><!--//section-inner-->
 	</section><!--//section-->
 
 </div><!--//primary-->

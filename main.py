@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template, session
+import json
 
 app = Flask(__name__)
 app.debug = True
@@ -8,6 +9,10 @@ try:
 	cnt = sum((1 for line in open('counter')))
 except Exception as e:
 	cnt = 0
+	
+def load_papers():
+	global papers
+	papers = json.load(open('paper_list.json'))
 
 def add_th(num):
 	if num % 10 == 1 and num % 100 != 11:
@@ -31,11 +36,14 @@ def add_counter():
 	
 @app.route('/')
 def index():
-	return render_template('index.html', cnt = add_th(session['count']))
+	global papers
+	return render_template('index.html', cnt = add_th(session['count']), papers = papers)
 	
 @app.route('/<name>')
 def show_page(name):
-	return render_template('%s.html' % name, cnt = add_th(session['count']))
+	global papers
+	return render_template('%s.html' % name, cnt = add_th(session['count']), papers = papers)
 
 if __name__ == '__main__':
+	load_papers()
 	app.run(host = '0.0.0.0')

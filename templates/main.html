@@ -54,18 +54,22 @@
         <div class="row">
 			{{ self.primary() }}
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                <aside class="info aside section">
+				<aside class="navigation info aside section">
                     <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
+                        <h2 class="heading sr-only">Navigation</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Beijing, China</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">ge@thumedia.org</a></li>
-                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://ge.thumedia.org</a></li>
+                                <li><i class="fa fa-home"></i><span class="sr-only">Home:</span><a href="/">Home</a></li>
+								<li><i class="fa fa-book"></i><span class="sr-only">Paper List:</span><a href="/#papers">Paper List</a></li>
+								<li><i class="fa fa-git"></i><span class="sr-only">Git:</span><a href="http://git.thumedia.org/groups/embedding">Git Repository</a></li>
+								<li><i class="fa fa-commenting"></i><span class="sr-only">About:</span><a href="/#about">About</a></li>
+								<li><i class="fa fa-users"></i><span class="sr-only">Members:</span><a href="/#members">Members</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//aside-->
+			
+                
                 
                 <!-- <aside class="journal papers aside section">
                     <div class="section-inner">
@@ -78,67 +82,33 @@
                 
                 <aside class="conference papers aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Conference Papers</h2>
+                        <h2 class="heading">Conference Papers </h2>
                         <div class="content">
-                            <a class="item" href="/structural-deep-network-embedding">
-								<h3 class="title"><i class="fa fa-pencil"></i> Structural deep network embedding</h3>
-								<h4 class="authors">D Wang, P Cui, W Zhu. <span class="year">(SIGKDD 2016)</span></h4>
-							</a>
-							<a class="item" href="/Comparing-Apples-to-Oranges-A-Scalable-Solution-with-Heterogeneous-Hashing">
-								<h3 class="title"><i class="fa fa-pencil"></i> Comparing Apples to Oranges: A Scalable Solution with Heterogeneous Hashing</h3>
-								<h4 class="authors">M Ou, P Cui, F Wang, J Wang, W Zhu, S Yang. <span class="year">(SIGKDD 2013)</span></h4>
-							</a>
-                             <a class="item" href="/asymmetric-transitivity-preserving-graph-embedding">
-                                <h3 class="title"><i class="fa fa-pencil"></i> Asymmetric Transitivity Preserving Graph Embedding</h3>
-                                <h4 class="authors">M Ou, P Cui, Z Zhang, J Pei, W Zhu. <span class="year">(SIGKDD 2016)</span></h4>
-                            </a>
-                            <a class="item" href="/community-preserving-network-embedding">
-                                <h3 class="title"><i class="fa fa-pencil"></i> Community Preserving Network Embedding</h3>
-                                <h4 class="authors">X Wang, P Cui, J Wang, J Pei, W Zhu, S Yang. <span class="year">(AAAI 2017)</span></h4>
-                            </a>
+                            {% for paper in papers %}
+								{% if loop.index <= 3 %}
+								<a class="item" href="/{{ paper.url }}">
+									<h3 class="title"><i class="fa fa-pencil"></i> {{ paper.title }}</h3>
+									<h4 class="authors">{{ paper.authors }} <span class="year">({{ paper.year }})</span></h4>
+								</a>
+								{% endif %}
+							{% endfor %}
+							<a class="more" href="/#papers"> [more]</a>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
 				
-				
-                
-                <aside class="members aside section">
+				<aside class="info aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Group Members</h2>
+                        <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
-							<a class="item" href="http://media.cs.tsinghua.edu.cn/cn/zww">
-                                <h3 class="name"><i class="fa fa-user"></i> Wenwu Zhu <span class="title"> Professor</span></h3>
-                            </a><!--//item-->
-							<a class="item" href="http://media.cs.tsinghua.edu.cn/~multimedia/cuipeng/">
-                                <h3 class="name"><i class="fa fa-user"></i> Peng Cui <span class="title"> Associate Professor</span></h3>
-                            </a><!--//item-->
-							<a class="item">
-                                <h3 class="name"><i class="fa fa-user"></i> Xiao Wang <span class="title"> Post-doctoral</span></h3>
-                            </a><!--//item-->
-							<a class="item">
-                                <h3 class="name"><i class="fa fa-user"></i> Mingdong Ou <span class="title"> Ph.D</span></h3>
-                            </a><!--//item-->
-							<a class="item">
-                                <h3 class="name"><i class="fa fa-user"></i> Ke Tu <span class="title"> Ph.D Candidate</span></h3>
-                            </a><!--//item-->
-							<a class="item">
-                                <h3 class="name"><i class="fa fa-user"></i> Dingyuan Zhu <span class="title"> Ph.D Candidate</span></h3>
-                            </a><!--//item-->
-							<a class="item" href="mailto:chen.xm.mu@gmail.com">
-                                <h3 class="name"><i class="fa fa-user"></i> Xumin Chen <span class="title"> Ph.D Candidate</span></h3>
-                            </a><!--//item-->
-							<a class="item">
-                                <h3 class="name"><i class="fa fa-user"></i> Ziwei Zhang <span class="title"> Ph.D Candidate</span></h3>
-                            </a><!--//item-->
-							<a class="item">
-                                <h3 class="name"><i class="fa fa-user"></i> Jianxin Ma <span class="title"> Undergraduate</span></h3>
-                            </a><!--//item-->
-							<a class="item">
-                                <h3 class="name"><i class="fa fa-user"></i> Xuanrong Yao <span class="title"> Undergraduate</span></h3>
-                            </a><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Beijing, China</li>
+								<li><i class="fa fa-paper-plane"></i><span class="sr-only">Mail:</span>9-316, East Main Building, Tsinghua University</li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="http://nrl.thumedia.org">nrl.thumedia.org</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
 				
 				<aside class="counter aside section">
                     <div class="section-inner">
