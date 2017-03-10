@@ -6,16 +6,8 @@
 			<h2 class="paper-title">Structural deep network embedding</h2>
 			<div class="content">
 				<h4 class="authors">Daixin Wang, Peng Cui, Wenwu Zhu. SIGKDD 2016</h3>
-				<p>Network embedding is an important method to learn low-dimensional
-representations of vertexes in networks, aiming to capture and preserve
-the network structure. Almost all the existing network embedding
-methods adopt shallow models. However, since the underlying
-network structure is complex, shallow models cannot capture
-the highly non-linear network structure, resulting in sub-optimal
-network representations. Therefore, how to find a method that is
-able to effectively capture the highly non-linear network structure
-and preserve the global and local structure is an open yet important
-problem. To solve this problem, in this paper we propose a
+				<p>to find a method that is able to effectively capture the highly non-linear network structure
+and preserve the global and local structure, we propose a
 Structural Deep Network Embedding method, namely SDNE. More
 specifically, we first propose a semi-supervised deep model, which
 has multiple layers of non-linear functions, thereby being able to
@@ -27,23 +19,50 @@ While the first-order proximity is used as the supervised information
 in the supervised component to preserve the local network
 structure. By jointly optimizing them in the semi-supervised deep
 model, our method can preserve both the local and global network
-structure and is robust to sparse networks. Empirically, we conduct
+structure and is robust to sparse networks. </p>
+<img alt="" src="static/assets/images/Structural deep network embedding.png" width="60%"/>
+			<p>
+Empirically, we conduct
 the experiments on five real-world networks, including a language
 network, a citation network and three social networks. The results
 show that compared to the baselines, our method can reconstruct
 the original network significantly better and achieves substantial
 gains in three applications, i.e. multi-label classification, link prediction
 and visualization.</p>
-			 
-			</div><!--//content-->
+			 </div><!--//content-->
 		</div><!--//section-inner-->                 
 	</section><!--//section-->
-
-   <section class="motivation section">
+    <section class="dataset section">
 		<div class="section-inner">
-			<h2 class="heading">Motivation</h2>
-			<div class="content">    
-				<p>This is the motivation</p>
+			<h2 class="heading">Dataset</h2>
+			<div class="content">
+				</ul>
+				<li>
+				   <a href="https://snap.stanford.edu/data/ca-GrQc.html">
+     				ca-GrQc
+    				</a>
+				</li>
+                <li>
+				   <a href="http://socialcomputing.asu.edu/datasets/BlogCatalog3">
+     				BlogCatalog
+    				</a>
+				</li>
+                <li>
+				   <a href="http://socialcomputing.asu.edu/datasets/Flickr">
+     				flick
+    				</a>
+				</li>
+                <li>
+				   <a href="http://socialcomputing.asu.edu/datasets/YouTube2">
+     				youtube
+    				</a>
+				</li>
+                <li>
+				   <a href="http://qwone.com/~jason/20Newsgroups/">
+     				20News
+    				</a>
+				</li>
+				</ul>
 				
 			</div><!--//content-->  
 		</div><!--//section-inner-->                 
@@ -57,6 +76,17 @@ and visualization.</p>
 			</div><!--//content-->  
 		</div><!--//section-inner-->                 
 	</section><!--//section-->
-	
+	<section class="reference section">
+		<div class="section-inner">
+			<h2 class="heading">References</h2>
+			<div class="content">
+				<p>
+				   Daixin Wang, Peng Cui, Wenwu Zhu. <a href="http://dl.acm.org/citation.cfm?id=2939753">Structural Deep Network Embedding</a>//Proceeding
+KDD '16 Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+Pages 1225-1234 
+				  </p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
 </div><!--//primary-->
 {% endblock %}
