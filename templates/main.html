@@ -39,13 +39,26 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">                       
-            <div class="profile-content pull-left">
-				<h1 class="title">Network Representation Learning</h1>
-                <h4 class="others">Lab of Media and Network</h4>
-                <h4 class="others">Department of Computer Science & Technology</h4>
-				<h4 class="others">Tsinghua University</h4>
-            </div><!--//profile-->
-			<img class="profile-image img-responsive pull-right" src="static/assets/images/profile.png" alt="logo" width="30%" />
+            <div class="profile-content row">
+				<div class="col-md-8">
+					<h1 class="title">Network Representation Learning</h1>
+				</div>
+				<div class="col-md-4">
+					<div class="profile-small-container">
+						<div class="row profile-small-item">
+							<div class="col-md-3 col-md-offset-2 profile-col-left">
+								<img class="profile-image img-responsive" src="static/assets/images/profile.png" alt="logo" />
+							</div>
+							<div class="col-md-7 profile-col-right">
+								<h4 class="others profile-small">Lab of Media and Network</h4>
+								<h4 class="others profile-small">Department of Computer Science & Technology</h4>
+								<h4 class="others profile-small">Tsinghua University</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
             <!-- <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>  -->
         </div><!--//container-->
     </header><!--//header-->
@@ -60,10 +73,6 @@
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-home"></i><span class="sr-only">Home:</span><a href="/">Home</a></li>
-								<li><i class="fa fa-book"></i><span class="sr-only">Paper List:</span><a href="/#papers">Paper List</a></li>
-								<li><i class="fa fa-git"></i><span class="sr-only">Git:</span><a href="http://git.thumedia.org/groups/embedding">Git Repository</a></li>
-								<li><i class="fa fa-commenting"></i><span class="sr-only">About:</span><a href="/#about">About</a></li>
-								<li><i class="fa fa-users"></i><span class="sr-only">Members:</span><a href="/#members">Members</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -80,9 +89,9 @@
                     </div>
                 </aside> -->
                 
-                <aside class="conference papers aside section">
+                <aside class="latest papers aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Conference Papers </h2>
+                        <h2 class="heading">Latest Papers </h2>
                         <div class="content">
                             {% for paper in papers %}
 								{% if loop.index <= 3 %}
@@ -105,6 +114,7 @@
                                 <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Beijing, China</li>
 								<li><i class="fa fa-paper-plane"></i><span class="sr-only">Mail:</span>9-316, East Main Building, Tsinghua University</li>
                                 <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="http://nrl.thumedia.org">nrl.thumedia.org</a></li>
+								<li><i class="fa fa-git"></i><span class="sr-only">Git:</span><a href="http://git.thumedia.org/groups/embedding">Code Repository</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 

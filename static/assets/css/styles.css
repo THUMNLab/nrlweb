@@ -124,9 +124,33 @@ iframe {
   margin-top: 60px;
   font-weight: bold;
 }
+.header .row{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.header .row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+.header .profile-col-left{
+	padding-right: 0;
+}
+.header .profile-col-right{
+	padding-left: 0;
+}
+.header .profile-small-container{
+	height: 100%;
+	position: relative;
+}
+.header .profile-small-item{
+	position: absolute;
+	bottom: 0;
+}
 .header .profile-image {
-  margin-top: 5px;
-  margin-right: 5px;
+  
 }
 .header .profile-content .title {
   color: #49515a;
@@ -138,7 +162,7 @@ iframe {
   color: #778492;
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 10px;
   margin-left: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
