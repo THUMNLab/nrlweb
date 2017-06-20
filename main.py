@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, session
 import json
 
 app = Flask(__name__)
-app.debug = True
+#app.debug = True
 app.secret_key = 'd3b4c763-24b3-451b-9dbf-b3063c500198'
 
 try:
