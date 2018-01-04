@@ -1,5 +1,11 @@
 [
 	{
+		"title" : "Structural Deep Embedding for Hyper-Networks",
+		"authors" : "Tu, Ke and Cui, Peng and Wang, Xiao and Wang, Fei and Zhu, Wenwu.",
+		"year" : "AAAI 2018",
+		"url" : "Structural-Deep-Embedding-for-Hyper-Networks"
+	},
+	{
 		"title" : "Community Preserving Network Embedding",
 		"authors" : ["X Wang", "P Cui", "J Wang", "J Pei", "W Zhu", "S Yang"],
 		"year" : "AAAI 2017",
