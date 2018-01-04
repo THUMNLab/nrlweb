@@ -3,7 +3,11 @@ import json
 
 app = Flask(__name__)
 #app.debug = True
-app.secret_key = 'd3b4c763-24b3-451b-9dbf-b3063c500198'
+try:
+	app.secret_key = open('secret_key').read()
+except Exception as e:
+	print('Please create a file named `secret_key` with a secret string like `d3b4c763-24b3-451b-9dbf-b3063c500198`.')
+	raise e
 
 try:
 	cnt = sum((1 for line in open('counter')))
