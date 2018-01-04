@@ -1,6 +1,5 @@
 {% extends 'main.html' %}
 {% block primary %}
-<div class="primary col-md-8 col-sm-12 col-xs-12">
 	<section class="papers section">
 		<div class="section-inner" id="papers">
 			<h2 class="heading">Latest Papers</h2>
@@ -8,7 +7,7 @@
 				{% for paper in papers %}
 				<a class="item" href="/{{ paper.url }}">
 					<h3 class="title"><i class="fa fa-pencil"></i> {{ paper.title }}</h3>
-					<h4 class="authors">{{ paper.authors }} <span class="year">({{ paper.year }})</span></h4>
+					<h4 class="authors">{{ ', '.join(paper.authors) + '.' }} <span class="year">({{ paper.year }})</span></h4>
 				</a>
 				{% endfor %}
 			</div><!--//content-->
@@ -64,6 +63,4 @@
 			</div>
 		</div>
 	</section> -->
-
-</div><!--//primary-->
 {% endblock %}

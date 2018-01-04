@@ -1,31 +1,31 @@
 [
 	{
 		"title" : "Community Preserving Network Embedding",
-		"authors" : "X Wang, P Cui, J Wang, J Pei, W Zhu, S Yang.",
+		"authors" : ["X Wang", "P Cui", "J Wang", "J Pei", "W Zhu", "S Yang"],
 		"year" : "AAAI 2017",
 		"url" : "community-preserving-network-embedding"
 	},
 	{
 		"title" : "Structural deep network embedding",
-		"authors" : "D Wang, P Cui, W Zhu.",
+		"authors" : ["D Wang", "P Cui", "W Zhu"],
 		"year" : "SIGKDD 2016",
 		"url" : "structural-deep-network-embedding"
 	},
 	{
 		"title" : "Asymmetric Transitivity Preserving Graph Embedding",
-		"authors" : "M Ou, P Cui, Z Zhang, J Pei, W Zhu.",
+		"authors" : ["M Ou", "P Cui", "Z Zhang", "J Pei", "W Zhu"],
 		"year" : "SIGKDD 2016",
 		"url" : "asymmetric-transitivity-preserving-graph-embedding"
 	},
 	{
 		"title" : "Non-transitive Hashing with Latent Similarity Components",
-		"authors" : "M Ou, P Cui, F Wang, J Wang, W Zhu.",
+		"authors" : ["M Ou", "P Cui", "F Wang", "J Wang", "W Zhu"],
 		"year" : "SIGKDD 2015",
 		"url" : "non-transitive-hashing-with-latent-similarity-components"
 	},
 	{
 		"title" : "Comparing Apples to Oranges: A Scalable Solution with Heterogeneous Hashing",
-		"authors" : "M Ou, P Cui, F Wang, J Wang, W Zhu, S Yang.",
+		"authors" : ["M Ou", "P Cui", "F Wang", "J Wang", "W Zhu", "S Yang"],
 		"year" : "SIGKDD 2013",
 		"url" : "Comparing-Apples-to-Oranges-A-Scalable-Solution-with-Heterogeneous-Hashing"
 	}

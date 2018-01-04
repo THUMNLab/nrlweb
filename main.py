@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, session
 import json
 
 app = Flask(__name__)
-#app.debug = True
+app.debug = True
 try:
 	app.secret_key = open('secret_key').read()
 except Exception as e:
@@ -46,7 +46,12 @@ def index():
 @app.route('/<name>')
 def show_page(name):
 	global papers
-	return render_template('%s.html' % name, cnt = add_th(session['count']), papers = papers)
+	args = None
+	for paper in papers:
+		if paper['url'] == name:
+			args = paper
+			break
+	return render_template('%s.html' % name, cnt = add_th(session['count']), args = args, papers = papers)
 
 if __name__ == '__main__':
 	load_papers()

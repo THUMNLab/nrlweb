@@ -1,11 +1,6 @@
 {% extends 'main.html' %}
-{% block primary %}
-<div class="primary col-md-8 col-sm-12 col-xs-12">
-	<section class="title section">
-		<div class="section-inner">
-			<h2 class="paper-title">Structural deep network embedding</h2>
-			<div class="content">
-				<h4 class="authors">Daixin Wang, Peng Cui, Wenwu Zhu. SIGKDD 2016</h3>
+
+{% block heading %}
 				<p>to find a method that is able to effectively capture the highly non-linear network structure
 and preserve the global and local structure, we propose a
 Structural Deep Network Embedding method, namely SDNE. More
@@ -29,9 +24,8 @@ show that compared to the baselines, our method can reconstruct
 the original network significantly better and achieves substantial
 gains in three applications, i.e. multi-label classification, link prediction
 and visualization.</p>
-			 </div><!--//content-->
-		</div><!--//section-inner-->                 
-	</section><!--//section-->
+{% endblock %}
+{% block primary %}
     <section class="dataset section">
 		<div class="section-inner">
 			<h2 class="heading">Dataset</h2>
@@ -88,5 +82,4 @@ Pages 1225-1234
 			</div><!--//content-->  
 		</div><!--//section-inner-->                 
 	</section><!--//section-->
-</div><!--//primary-->
 {% endblock %}

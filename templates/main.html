@@ -65,7 +65,23 @@
     
     <div class="container sections-wrapper">
         <div class="row">
-			{{ self.primary() }}
+			
+			<div class="primary col-md-8 col-sm-12 col-xs-12">
+				{% if args %}
+				<section class="title section">
+					<div class="section-inner">
+						<h2 class="paper-title">{{ args.title }}</h2>
+						<div class="content">
+							<h4 class="authors">{{ ', '.join(args.authors) + '.' }} {{ args.year }}</h4>
+							{% block heading %}
+							{% endblock %}
+						</div><!--//content-->
+					</div><!--//section-inner-->                 
+				</section><!--//section-->
+				{% endif %}
+				{% block primary %}
+				{% endblock %}
+			</div>
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
 				<aside class="navigation info aside section">
                     <div class="section-inner">
@@ -97,7 +113,7 @@
 								{% if loop.index <= 3 %}
 								<a class="item" href="/{{ paper.url }}">
 									<h3 class="title"><i class="fa fa-pencil"></i> {{ paper.title }}</h3>
-									<h4 class="authors">{{ paper.authors }} <span class="year">({{ paper.year }})</span></h4>
+									<h4 class="authors">{{ ', '.join(paper.authors) + '.' }} <span class="year">({{ paper.year }})</span></h4>
 								</a>
 								{% endif %}
 							{% endfor %}

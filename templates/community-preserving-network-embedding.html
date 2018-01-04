@@ -1,16 +1,8 @@
 {% extends 'main.html' %}
+{% block heading %}
+<p>M-NMF learns the representations of nodes in a network which can preserve the microscopic structure (first- and second-order proximities of nodes) and mesoscopic community structure.</p>
+{% endblock %}
 {% block primary %}
-<div class="primary col-md-8 col-sm-12 col-xs-12">
-	<section class="title section">
-		<div class="section-inner">
-			<h2 class="paper-title">Community Preserving Network Embedding</h2>
-			<div class="content">
-				<h4 class="authors">Xiao Wang, Peng Cui, Jing Wang, Jian Pei, Wenwu Zhu, Shiqiang Yang. AAAI 2017</h3>
-				<p>M-NMF learns the representations of nodes in a network which can preserve the microscopic structure (first- and second-order proximities of nodes) and mesoscopic community structure.</p>
-			 
-			</div><!--//content-->
-		</div><!--//section-inner-->                 
-	</section><!--//section-->
 
    <section class="motivation section">
 		<div class="section-inner">
@@ -56,5 +48,4 @@
 		</div><!--//section-inner-->                 
 	</section><!--//section-->
 	
-</div><!--//primary-->
 {% endblock %}
