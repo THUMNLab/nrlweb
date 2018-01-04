@@ -1,0 +1,107 @@
+{% extends 'main.html' %}
+{% block primary %}
+<div class="primary col-md-8 col-sm-12 col-xs-12">
+	<section class="title section">
+		<div class="section-inner">
+			<h2 class="paper-title">Structural Deep Embedding for Hyper-Networks</h2>
+			<div class="content">
+				<h4 class="authors">Tu, Ke and Cui, Peng and Wang, Xiao and Wang, Fei and Zhu, Wenwu. AAAI 2018</h3>
+			 
+			</div><!--//content-->
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+   <section class="motivation section">
+		<div class="section-inner">
+			<h2 class="heading">Motivation</h2>
+			<div class="content">    
+				<p>
+                Network embedding has recently attracted lots of attentions
+                in data mining. Existing network embedding methods mainly
+                focus on networks with pairwise relationships. In real world,
+                however, the relationships among data points could go be-
+                yond pairwise, i.e., three or more objects are involved in
+                each relationship represented by a hyperedge, thus forming
+                hyper-networks. These hyper-networks pose great challenges
+                to existing network embedding methods when the hyperedges
+                are indecomposable, that is to say, any subset of nodes in
+                a hyperedge cannot form another hyperedge. These indecomposable hyperedges are especially common in heterogeneous networks.
+				  </p>
+				  <p>
+				   <img alt="" src="static/assets/images/Structural-Deep-Embedding-for-Hyper-Networks.png" width="60%"/>
+				  </p>
+				  <p>
+                  In this paper, we propose a novel <em>Deep
+                      Hyper-Network Embedding</em> (DHNE) model to embed hyper-
+                  networks with indecomposable hyperedges. More specifi-
+                  cally, we theoretically prove that any linear similarity met-
+                  ric in embedding space commonly used in existing meth-
+                  ods cannot maintain the indecomposibility property in hyper-
+                  networks, and thus propose a new deep model to realize
+                  a non-linear tuplewise similarity function while preserving
+                  both local and global proximities in the formed embedding
+                  space. We conduct extensive experiments on four different
+                  types of hyper-networks, including a GPS network, an on-
+                  line social network, a drug network and a semantic network.
+                  The empirical results demonstrate that our method can signif-
+                  icantly and consistently outperform the state-of-the-art algo-
+                  rithms.
+				</p>
+				
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+	<section class="code section">
+		<div class="section-inner">
+			<h2 class="heading">Code</h2>
+			<div class="content">
+                <p>
+                Git repository: <a href="https://github.com/tadpole/DHNE"/>github.com/tadpole/DHNE</a>
+                </p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+
+	<section class="dataset section">
+		<div class="section-inner">
+			<h2 class="heading">Dataset</h2>
+			<div class="content">
+				</ul>
+				<li>
+                    <a href="https://www.microsoft.com/en-us/research/publication/collaborative-filtering-meets-mobile-recommendation-a-user-centered-approach-2/">
+				   GPS
+				</li>
+				<li>
+				   <a href="https://grouplens.org/datasets/movielens/">
+     				MovieLens
+    				</a>
+				</li>
+                <li>
+                    <a href="http://www.fda.gov/Drugs/">
+                    drug
+                </li>
+                <li>
+                    <a href="https://wordnet.princeton.edu/wordnet/download/current-version/">
+                    wordnet
+                    </a>
+                </li>
+				</ul>
+				
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+	
+	<section class="reference section">
+		<div class="section-inner">
+			<h2 class="heading">References</h2>
+			<div class="content">
+				<p>
+                Tu, K., Cui, P., Wang, X., Wang, F., & Zhu, W. <a herf="https://arxiv.org/abs/1711.10146">Structural Deep Embedding for Hyper-Networks.</a> arXiv preprint arXiv:1711.10146 (2017).
+				  </p>
+			</div><!--//content-->  
+		</div><!--//section-inner-->                 
+	</section><!--//section-->
+	
+</div><!--//primary-->
+{% endblock %}
