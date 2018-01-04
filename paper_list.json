@@ -1,7 +1,7 @@
 [
 	{
 		"title" : "Structural Deep Embedding for Hyper-Networks",
-		"authors" : "Tu, Ke and Cui, Peng and Wang, Xiao and Wang, Fei and Zhu, Wenwu.",
+		"authors" : ["K Tu", "P Cui", "X Wang", "F Wang", "W Zhu"],
 		"year" : "AAAI 2018",
 		"url" : "Structural-Deep-Embedding-for-Hyper-Networks"
 	},

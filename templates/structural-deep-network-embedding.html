@@ -1,7 +1,13 @@
 {% extends 'main.html' %}
 
 {% block heading %}
-				<p>to find a method that is able to effectively capture the highly non-linear network structure
+{% endblock %}
+{% block primary %}
+	<section class="motivation section">
+		<div class="section-inner">
+			<h2 class="heading">Motivation</h2>
+			<div class="content">
+			<p>to find a method that is able to effectively capture the highly non-linear network structure
 and preserve the global and local structure, we propose a
 Structural Deep Network Embedding method, namely SDNE. More
 specifically, we first propose a semi-supervised deep model, which
@@ -24,8 +30,9 @@ show that compared to the baselines, our method can reconstruct
 the original network significantly better and achieves substantial
 gains in three applications, i.e. multi-label classification, link prediction
 and visualization.</p>
-{% endblock %}
-{% block primary %}
+			</div>
+		</div>
+	</section>
     <section class="dataset section">
 		<div class="section-inner">
 			<h2 class="heading">Dataset</h2>
