@@ -2,16 +2,20 @@ from flask import Flask, request, render_template, session
 import json
 
 app = Flask(__name__)
-app.debug = True
+#app.debug = True
 try:
 	app.secret_key = open('secret_key').read()
 except Exception as e:
 	print('Please create a file named `secret_key` with a secret string like `d3b4c763-24b3-451b-9dbf-b3063c500198`.')
 	raise e
 
-try:
-	cnt = sum((1 for line in open('counter')))
-except Exception as e:
+for cnt_path in ['counter', '/shared/counter']:
+	try:
+		cnt = sum((1 for line in open(cnt_path)))
+		break
+	except Exception as e:
+		pass
+else:
 	cnt = 0
 	
 def load_papers():
