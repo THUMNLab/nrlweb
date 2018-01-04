@@ -35,11 +35,11 @@ def add_th(num):
 	
 @app.before_request
 def add_counter():
-	global cnt
+	global cnt, cnt_path
 	if 'count' not in session:
 		cnt += 1
 		session['count'] = cnt
-		with open('counter', 'a') as f:
+		with open(cnt_path, 'a') as f:
 			f.write('%s\n' % request.remote_addr)
 	
 @app.route('/')
