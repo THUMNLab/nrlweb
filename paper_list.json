@@ -1,5 +1,11 @@
 [
 	{
+		"title" : "TIMERS: Error-Bounded SVD Restart on Dynamic Networks",
+		"authors" : ["Z Zhang", "P Cui", "J Pei", "X Wang", "W Zhu"],
+		"year" : "AAAI 2018",
+		"url" : "TIMERS-Error-Bounded-SVD-Restart-on-Dynamic-Networks"
+	},
+	{
 		"title" : "Structural Deep Embedding for Hyper-Networks",
 		"authors" : ["K Tu", "P Cui", "X Wang", "F Wang", "W Zhu"],
 		"year" : "AAAI 2018",
