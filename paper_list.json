@@ -1,5 +1,11 @@
 [
 	{
+		"title" : "DepthLGP: Learning Embeddings of Out-of-Sample Nodes in Dynamic Networks",
+		"authors" : ["J Ma", "P Cui", "W Zhu"],
+		"year" : "AAAI 2018",
+		"url" : "DepthLGP-out-of-sample"
+	},
+	{
 		"title" : "TIMERS: Error-Bounded SVD Restart on Dynamic Networks",
 		"authors" : ["Z Zhang", "P Cui", "J Pei", "X Wang", "W Zhu"],
 		"year" : "AAAI 2018",
