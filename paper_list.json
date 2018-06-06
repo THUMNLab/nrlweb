@@ -1,4 +1,10 @@
 [
+    {
+		"title" : "Arbitrary-Order Proximity Preserved Network Embedding",
+		"authors" : ["Z Zhang", "P Cui", "X Wang", "J Pei", "X Yao","W Zhu"],
+		"year" : "KDD 2018",
+		"url" : "Arbitrary-Order-Proximity-Preserved-Network-Embedding"
+	},
 	{
 		"title" : "DepthLGP: Learning Embeddings of Out-of-Sample Nodes in Dynamic Networks",
 		"authors" : ["J Ma", "P Cui", "W Zhu"],
