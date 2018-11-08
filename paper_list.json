@@ -1,5 +1,11 @@
 [
 	{
+		"title" : "Hierarchical Taxonomy Aware Network Embedding",
+		"authors" : ["J Ma", "P Cui", "X Wang", "W Zhu"],
+		"year" : "KDD 2018",
+		"url" : "NetHiex-nCRP"
+	},
+	{
 		"title" : "Deep Recursive Network Embedding with Regular Equivalence",
 		"authors": ["K Tu", "P Cui", "X Wang", "PS Yu", "W Zhu"],
 		"year": "KDD 2018",
