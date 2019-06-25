@@ -1,0 +1,42 @@
+{% extends 'main.html' %}
+{% block heading %}
+<p>DisenGCN is a new graph convolutional network (GCN) that aims to learn disentangled representations.</p>
+{% endblock %}
+{% block primary %}
+
+   <section class="motivation section">
+		<div class="section-inner">
+			<h2 class="heading">Motivation</h2>
+			<div class="content">
+				<p><img class="pic" src="static/assets/images/DisenGCN-motivation.png" alt="many-latent-factors" width="100%"/></p>
+                <p>The formation of a real-world graph typically arises from the highly complex interaction of many latent factors. The existing deep learning methods for graph-structured data neglect the entanglement of the latent factors, rendering the learned representations non-robust and hardly explainable. However, learning representations that disentangle the latent factors poses great challenges and remains largely unexplored in the literature of graph neural networks.</p>
+				<p><img class="pic" src="static/assets/images/DisenGCN-framework.png" alt="disentangled-graph-convolutional-layer" width="100%"/></p>
+                <p>In this paper, we introduce the disentangled graph convolutional network (DisenGCN) to learn disentangled node representations. In particular, we propose a novel neighborhood routing mechanism, which is capable of dynamically identifying the latent factor that may have caused the edge between a node and one of its neighbors,  and accordingly assigning the neighbor to a channel that extracts and convolutes features specific to that factor. We theoretically prove the convergence properties of the routing mechanism. Empirical results show that our proposed model can achieve significant performance gains, especially when the data demonstrate the existence of many entangled factors.</p>
+			</div><!--//content-->
+		</div><!--//section-inner-->
+	</section><!--//section-->
+
+	<section class="code section">
+		<div class="section-inner">
+			<h2 class="heading">Code</h2>
+			<div class="content">
+				<p>Source Code: <a href="https://github.com/JianxinMa/jianxinma.github.io/blob/master/assets/DisenGCN-py3.zip">DisenGCN-py3.zip</a></p>
+				<p>Slides: <a href="https://github.com/JianxinMa/jianxinma.github.io/blob/master/assets/DisenGCN-slides.pptx">DisenGCN-slides.pptx</a></p>
+				<p>Poster: <a href="https://github.com/JianxinMa/jianxinma.github.io/blob/master/assets/DisenGCN-poster.pdf">DisenGCN-poster.pdf</a></p>
+			</div><!--//content-->
+		</div><!--//section-inner-->
+	</section><!--//section-->
+
+	<section class="References section">
+		<div class="section-inner">
+			<h2 class="heading">References</h2>
+			<div class="content">
+				<p>
+                <a href="https://jianxinma.github.io/assets/DisenGCN.pdf">Disentangled Graph Convolutional Networks</a>
+                </p>
+                <p><a href="https://jianxinma.github.io/">Jianxin Ma</a>, Peng Cui, Kun Kuang, Xin Wang, Wenwu Zhu. ICML 2019.</p>
+			</div><!--//content-->
+		</div><!--//section-inner-->
+	</section><!--//section-->
+
+{% endblock %}

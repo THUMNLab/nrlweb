@@ -1,5 +1,11 @@
 [
 	{
+		"title" : "Disentangled Graph Convolutional Networks",
+		"authors" : ["J Ma", "P Cui", "K Kuang", "X Wang", "W Zhu"],
+		"year" : "ICML 2019",
+		"url" : "DisenGCN"
+	},
+	{
 		"title" : "Hierarchical Taxonomy Aware Network Embedding",
 		"authors" : ["J Ma", "P Cui", "X Wang", "W Zhu"],
 		"year" : "KDD 2018",
